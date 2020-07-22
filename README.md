@@ -32,6 +32,8 @@ The **master computer's ptp4l service** must always be running.
 ```sh
 ./findConvergence.py
 ```
+- ***You need to view the contents of the code and modify the PATH of the txt file***
+
 - This python code analyzes a txt file and outputs the **index and offset of the converged section.**
 
 
@@ -40,12 +42,15 @@ The **master computer's ptp4l service** must always be running.
 ```sh
 ./jsonTocsv.py
 ```
+- ***You need to view the contents of the code and modify the PATH of the txt file***
+
 
 4. Run **csv_Visualization.ipynb** in the jupyter-notebook
 - This file **visualizes the data** via csv file.
  ```sh
  jupyter-notebook
  ```
+ - ***You need to view the contents of the code and modify the PATH of the txt file***
 
 
 
