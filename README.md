@@ -50,7 +50,7 @@ The **master computer's ptp4l service** must always be running.
 
 
 
-#File Configuration
+# File Configuration
 
 ## run.sh
 This shell code runs on the slave. 
