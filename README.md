@@ -82,4 +82,13 @@ This file converts JSON file to csv.
 This file visualizes the data.
 
 
+### Result
+
+![total_result](https://user-images.githubusercontent.com/33818414/88164128-a9697e80-cc4e-11ea-8cdc-38f75e96bd34.png)
+
+
+
+![sub_result](https://user-images.githubusercontent.com/33818414/88164145-b1292300-cc4e-11ea-9aae-df258da9d194.png)
+
+
 
