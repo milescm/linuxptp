@@ -32,6 +32,17 @@ The **master computer's ptp4l service** must always be running.
 ## run.sh
 This shell code runs on the slave. This program runs the 'ptp4l' service for 5min and stops it.
 The log of the service is saved as a txt file and a JSON file through redirection.
+(Use journalctl to print the system log as a JSON file.)
 The JSON file has TIMESTAMP, but the txt file has no time variable.
+
+## findConvergence.py
+When the offset is constant below 1000, set to convergence.
+This file compares the offset values of the txt file and judges that it is convergence.
+
+## jsonToCsv.py
+This file converts JSON file to csv.
+
+## csv_Visualization.ipynb
+This file visualizes the data.
 
 
