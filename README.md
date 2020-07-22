@@ -25,6 +25,8 @@ The **master computer's ptp4l service** must always be running.
 ```sh
 ./run.sh
 ```
+
+![runsh](https://user-images.githubusercontent.com/33818414/88164312-ecc3ed00-cc4e-11ea-8611-8e0c6b922fde.png)
 - When the shell code ends, check the **created txt and JSON files**.
 
 
@@ -32,6 +34,8 @@ The **master computer's ptp4l service** must always be running.
 ```sh
 ./findConvergence.py
 ```
+
+![findconvergence](https://user-images.githubusercontent.com/33818414/88164325-f188a100-cc4e-11ea-86bd-05f1b6e6fc15.png)
 - ***You need to view the contents of the code and modify the PATH of the txt file***
 
 - This python code analyzes a txt file and outputs the **index and offset of the converged section.**
@@ -42,6 +46,9 @@ The **master computer's ptp4l service** must always be running.
 ```sh
 ./jsonTocsv.py
 ```
+
+![jsontocsv](https://user-images.githubusercontent.com/33818414/88164338-f51c2800-cc4e-11ea-8b02-a79a21311d3b.png)
+
 - ***You need to view the contents of the code and modify the PATH of the JSON file***
 
 
