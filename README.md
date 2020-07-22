@@ -42,7 +42,7 @@ The **master computer's ptp4l service** must always be running.
 ```sh
 ./jsonTocsv.py
 ```
-- ***You need to view the contents of the code and modify the PATH of the txt file***
+- ***You need to view the contents of the code and modify the PATH of the JSON file***
 
 
 4. Run **csv_Visualization.ipynb** in the jupyter-notebook
@@ -50,7 +50,7 @@ The **master computer's ptp4l service** must always be running.
  ```sh
  jupyter-notebook
  ```
- - ***You need to view the contents of the code and modify the PATH of the txt file***
+ - ***You need to view the contents of the code and modify the PATH of the csv file***
 
 
 
