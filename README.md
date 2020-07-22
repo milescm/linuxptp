@@ -14,9 +14,15 @@ The **master computer's ptp4l service** must always be running.
 
 # How to Use
 1. Run **run.sh** in the terminal commmand.
+```sh
+./run.sh
+```
 - When the shell code ends, check the **created txt and JSON files**.
 
 2. Run **findConvergence.py** in the terminal command.
+```sh
+./findConvergence.py
+```
 - This python code analyzes a txt file and outputs the **index and offset of the converged section.**
 
 3. Run **jsonToCsv.py** in the terminal command.
