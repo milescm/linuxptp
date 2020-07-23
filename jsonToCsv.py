@@ -4,7 +4,7 @@
 import pandas as pd
 import json
 import os
-
+import datetime
 
 print("Input file Name : abc.json --> abc")
 
@@ -50,6 +50,21 @@ dm = dm.reset_index(drop=True)
 
 data = data.drop(delete_rownum)
 data = data.reset_index(drop=True)
+
+# Convert Epoch time to human-readable date
+hdate = []
+for i in data['__REALTIME_TIMESTAMP']:
+    s = str(i)
+    hdate.append(int(s[0:10]))
+
+
+# datetime could get only integer as parameter
+dtime = pd.to_datetime(hdate, unit='s')
+minAndsec = dtime.strftime('%M:%S')
+
+# Add column UTC
+data['UTC'] = minAndsec
+
 
 # Make series to table value
 offset = pd.DataFrame(dm)[3]
