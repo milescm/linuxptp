@@ -7,8 +7,8 @@ import pandas as pd
 
 # read text file
 
-print("Input file Name : abc.txt --> abc\n")
-txtfileName = input("Input file name : ")
+print("abc.txt --> abc\n")
+txtfileName = input("Input txt file name : ")
 
 
 # File Path must be modified.

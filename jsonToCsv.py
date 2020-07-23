@@ -6,9 +6,8 @@ import json
 import os
 import datetime
 
-print("Input file Name : abc.json --> abc")
-
-jsonfileName = input('Input file name: ')
+print("abc.json --> abc\n")
+jsonfileName = input('Input JSON file name: ')
 
 # File Path must be modified.
 data = pd.read_json('./f_json/%s.json' %jsonfileName, lines=True)
