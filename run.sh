@@ -5,11 +5,21 @@ echo "This process will stop after 5min"
 # Start ptp4l sync
 
 ## The log values(offset, freq, path delay) are overwritten in the text file.
-sudo ptp4l -i eth0 -m >> /home/rtst15/AutoCheckTimeStamping/f_txt/ptpTime5min_4.txt &
+for ((i=1;i<=10;i++))
+do
+	if [[ -e "/home/rtst15/AutoCheckTimeStamping/f_txt/ptpTime5min_$i.txt" ]]; then
+		continue
+	else
+		echo "ptpTime_5min"$((i))".txt are creating !!"
+		sudo ptp4l -i eth0 -m >> /home/rtst15/AutoCheckTimeStamping/f_txt/ptpTime5min_"$((i))".txt &
+		break
+	fi
+done
 
 
 ## Waits 5 minutes.
 sleep 5m
+echo "txt file was created succesfully !!"
 
 
 ## Kill "ptp4l" process in linux
