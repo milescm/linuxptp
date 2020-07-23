@@ -90,12 +90,19 @@ This file visualizes the data.
 
 
 ### Result
-
-![total_result](https://user-images.githubusercontent.com/33818414/88164128-a9697e80-cc4e-11ea-8cdc-38f75e96bd34.png)
-
+![allTime](https://user-images.githubusercontent.com/33818414/88252332-be92eb80-cce8-11ea-9105-0a3b4ac8b50f.png)
 
 
-![sub_result](https://user-images.githubusercontent.com/33818414/88164145-b1292300-cc4e-11ea-9aae-df258da9d194.png)
+#### 0-30 sec
+![0-30](https://user-images.githubusercontent.com/33818414/88252338-c2267280-cce8-11ea-9afd-9d2ed175be4c.png)
 
+
+#### 31-60 sec
+![31-60](https://user-images.githubusercontent.com/33818414/88252341-c3f03600-cce8-11ea-8bc7-89c0af266fe7.png)
+
+
+#### 61--90 sec
+![60-90](https://user-images.githubusercontent.com/33818414/88252342-c6529000-cce8-11ea-83b6-aa1776d850e9.png)
+The purple line is the convergence section
 
 
