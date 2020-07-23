@@ -2,6 +2,8 @@
 
 echo "This process will stop after 5min"
 
+fname=""
+
 # Start ptp4l sync
 
 ## The log values(offset, freq, path delay) are overwritten in the text file.
@@ -11,6 +13,7 @@ do
 		continue
 	else
 		echo "ptpTime_5min"$((i))".txt are creating !!"
+		fname="ptpTime5min_"$((i))""
 		sudo ptp4l -i eth0 -m >> /home/rtst15/AutoCheckTimeStamping/f_txt/ptpTime5min_"$((i))".txt &
 		break
 	fi
@@ -40,7 +43,21 @@ do
 done
 
 
+echo -e "File Name : "$fname"\n"
 
+
+# Run jsonTocsv.py
+echo -e "jsonTocsv.py runs\n"
+/home/rtst15/AutoCheckTimeStamping/jsonToCsv.py
+
+
+# Run findConvergence.py
+echo -e "findConvergence.py runs\n"
+/home/rtst15/AutoCheckTimeStamping/findConvergence.py
+
+echo "~ Program Exit ~"
+
+exit 0
 
 
 
