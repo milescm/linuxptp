@@ -27,7 +27,7 @@ echo "txt file was created succesfully !!"
 
 ## Kill "ptp4l" process in linux
 sudo kill -9 `ps -ef | grep ptp4l | grep -v grep | awk '{print $2}'`
-
+echo -e "The ptp4l process terminated safely.\n"
 
 
 ## If "JSON" file exits, save it so that files do not overlap
@@ -55,6 +55,7 @@ echo -e "jsonTocsv.py runs\n"
 echo -e "findConvergence.py runs\n"
 /home/rtst15/AutoCheckTimeStamping/findConvergence.py
 
+echo -e "All process terminated safely !\n"
 echo "~ Program Exit ~"
 
 exit 0
