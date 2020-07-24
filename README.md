@@ -26,9 +26,18 @@ The **master computer's ptp4l service** must always be running.
 ./run.sh
 ```
 
-![runsh](https://user-images.githubusercontent.com/33818414/88164312-ecc3ed00-cc4e-11ea-8611-8e0c6b922fde.png)
-- When the shell code ends, check the **created txt and JSON files**.
+![run_1](https://user-images.githubusercontent.com/33818414/88355198-982f8780-cd9e-11ea-98a2-49bd8e57a874.png)
 
+
+- When the ptp4l service ends, Input the file name to conveer JSON file to csv
+
+
+![run_2](https://user-images.githubusercontent.com/33818414/88355201-9a91e180-cd9e-11ea-8b92-69e487946bf3.png)
+
+
+- When the file name is entered, check the **created txt and JSON files**.
+- A csv file is created
+- A txt file is read to output the convergence **index and offset**
 
 2. Run **findConvergence.py** in the terminal command.
 ```sh
