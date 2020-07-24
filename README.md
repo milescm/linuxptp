@@ -94,7 +94,7 @@ This file compares the offset values of the txt file and judges that it is conve
 This file converts JSON file to csv.
 
 
-## csv_Visualization.ipynb
+## scatter_Visualization.ipynb
 This file visualizes the data.
 
 
