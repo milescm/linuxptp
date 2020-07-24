@@ -90,23 +90,19 @@ This file visualizes the data.
 
 
 ### Result
-![allTime](https://user-images.githubusercontent.com/33818414/88252332-be92eb80-cce8-11ea-9105-0a3b4ac8b50f.png)
+![offset_during5min](https://user-images.githubusercontent.com/33818414/88353819-e7bf8480-cd99-11ea-9e49-eb44e81a3b55.png)
 
 
-#### 0-30 sec
-![0-30](https://user-images.githubusercontent.com/33818414/88252338-c2267280-cce8-11ea-9afd-9d2ed175be4c.png)
+
+#### 0 - 1 min
+![offset_0_1min](https://user-images.githubusercontent.com/33818414/88353830-ebeba200-cd99-11ea-98f6-d5f77fd65f1a.png)
 
 
-#### 31-60 sec
-![31-60](https://user-images.githubusercontent.com/33818414/88252341-c3f03600-cce8-11ea-8bc7-89c0af266fe7.png)
-
-
-#### 61--90 sec
-![60-90](https://user-images.githubusercontent.com/33818414/88252342-c6529000-cce8-11ea-83b6-aa1776d850e9.png)
-
-The purple line is the convergence section
+#### 1 - 2 min
+![offset_1_2min](https://user-images.githubusercontent.com/33818414/88353832-ee4dfc00-cd99-11ea-9a1a-2081245a0c1e.png)
 
 
 #### 90 - END
-![90-](https://user-images.githubusercontent.com/33818414/88252579-bc7d5c80-cce9-11ea-8502-c498fbfeb564.png)
+![offset_2min_END](https://user-images.githubusercontent.com/33818414/88353834-f0b05600-cd99-11ea-8500-d20fe421af10.png)
+
 
