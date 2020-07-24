@@ -3,7 +3,7 @@ This files used the Precision Time Protocol(PTP) according to IEEE standard 1588
 
 It contains log files that are generated at a specified time and analyzed and visualized.
 
-# Envorinment
+# Environment
 Master OS : Ubuntu20.04LTS
 
 Slave OS : Ubuntu18.04LTS
