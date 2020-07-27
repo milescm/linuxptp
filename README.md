@@ -21,7 +21,7 @@ The **master computer's ptp4l service** must always be running.
 
 
 # How to Use
-1. Run **run.sh** in the terminal commmand.
+1. Run **run.sh** in the terminal command.
 ```sh
 ./run.sh
 ```
