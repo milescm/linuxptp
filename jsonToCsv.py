@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding: utf-8
 
 import pandas as pd
@@ -24,6 +24,11 @@ data.drop(['_EXE', '_CMDLINE', '_CAP_EFFECTIVE','_SELINUX_CONTEXT','_AUDIT_SESSI
 # drop the column 3
 data.drop(['_UID','SYSLOG_FACILITY','SYSLOG_IDENTIFIER','_GID','_COMM','_PID','_SOURCE_REALTIME_TIMESTAMP'], axis='columns', inplace=True)
 
+
+# drop the column : monotonic stamp
+data.drop(['__MONOTONIC_TIMESTAMP'], axis='columns', inplace=True)
+
+
 # split the message
 delete_msg = []
 for i in data['MESSAGE']:
@@ -37,8 +42,8 @@ dm = pd.DataFrame(delete_msg)
 # find the system log message, index
 cnt = 0
 delete_rownum = []
-for i in dm[1]:
-    if(i!='master'):
+for i in dm[4]:
+    if(i!='s2'):
         delete_rownum.append(cnt)
     cnt+=1
 
@@ -55,6 +60,7 @@ hdate = []
 for i in data['__REALTIME_TIMESTAMP']:
     s = str(i)
     hdate.append(int(s[0:10]))
+data['__REALTIME_TIMESTAMP'] = hdate
 
 
 # datetime could get only integer as parameter
